@@ -22,9 +22,9 @@ $(function () {
       $(".js-next").attr("data-id", product["id"]);
     });
 
-    var nextUrl = "/products" + nextId
+    //var nextUrl = "/products" + nextId
 
-    var posting = $.post(nextUrl, values);
+    var posting = $.post("/products/" + nextId + ".json", values);
 
     posting.done(function(data) {
       var product = data
