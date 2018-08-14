@@ -5,13 +5,27 @@
     <%= f.text_field :name %>
     <br />
   </div>
-  <%= f.label :price %>
-  <%= f.text_field :price %>
-  <br />
-  <%= f.label :description %>
-  <%= f.text_area :description %>
-  <br />
-  <%= f.label :inventory %>
-  <%= f.text_field :inventory %>
+  
+  <div class="field">
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+    <br />
+  </div>
+
+  
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+    <br />
+  </div>
+
+  <div class="field">
+    <%= f.label :inventory %>
+    <%= f.text_field :inventory %>
+    <br />
+  </div>
+  
+  <div class="actions">
   <%= f.submit "submit" %>
+  </div>
 <% end %>
