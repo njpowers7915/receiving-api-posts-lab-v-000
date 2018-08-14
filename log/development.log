@@ -3231,3 +3231,16 @@ Processing by ProductsController#show as HTML
   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 20]]
   Rendered products/show.html.erb within layouts/application (0.2ms)
 Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/20" for 65.207.79.74 at 2018-08-14 18:56:03 +0000
+Cannot render console from 65.207.79.74! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"20"}
+Completed 400 Bad Request in 14ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  app/controllers/products_controller.rb:36:in `product_params'
+  app/controllers/products_controller.rb:26:in `show'
+
+
