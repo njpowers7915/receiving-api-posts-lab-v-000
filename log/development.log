@@ -2457,3 +2457,7 @@ Processing by ProductsController#show as HTML
   [1m[36mProduct Load (0.7ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 18]]
   Rendered products/show.html.erb within layouts/application (3.1ms)
 Completed 200 OK in 310ms (Views: 291.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/18" for 65.207.79.74 at 2018-08-14 17:55:33 +0000
+Cannot render console from 65.207.79.74! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
